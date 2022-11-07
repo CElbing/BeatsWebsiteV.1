@@ -38,12 +38,12 @@ body {
 
 #menu-items:hover>.menu-item {
     opacity: 0.3;
-    translate: 10px;
+    translate: 0px;
 }
 
 #menu-items:hover>.menu-item:hover {
     opacity: 1;
-    translate: 0px;
+    translate: 10px;
 }
 
 hr.solid {
