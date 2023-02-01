@@ -1,0 +1,26 @@
+body
+{
+    background-color: #4C4E52;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 75%);
+    z-index: -1;
+    
+}
+
+.logoInverse {
+    text-align: center;
+}
+
+.bgImageRochester{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
