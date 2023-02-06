@@ -6,6 +6,8 @@
 body {
   margin: 0px;
   background-color: rgb(18, 22, 26);
+  font-family: "raleway", sans-serif;
+  color: white;
 }
 
 header {
@@ -23,16 +25,39 @@ header {
   margin: 0;
 }
 
-.televoxTitle {
-  text-align: center;
-  width: 1000px;
-  height: auto;
-}
-
-.bodyText {
+.headline-text {
   color: white;
-  font-family: "raleway", sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
   font-weight: normal;
+}
+
+.phone-image{
+  width: 100%;
+  height: auto;
+  min-width: 500px;
+}
+
+.buisness-content{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  margin: 10%;
+  align-items: center;
+}
+
+.buisness-text{
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buisness-text, h1{
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.buisness-text, h2{
+  font-weight: normal;
+  font-size: 24px;
 }
