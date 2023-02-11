@@ -1,12 +1,11 @@
-@font-face {
-  font-family: "raleway";
-  src: url(stylesheets/fonts/static/Raleway-Italic-VariableFont_wght.ttf) format(truetype);
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0px;
   background-color: rgb(18, 22, 26);
-  font-family: "raleway", sans-serif;
+  font-family: sans-serif;
   color: white;
 }
 
@@ -25,6 +24,16 @@ header {
   margin: 0;
 }
 
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
 .headline-text {
   color: white;
   font-size: 48px;
@@ -32,32 +41,79 @@ header {
   font-weight: normal;
 }
 
-.phone-image{
+.phone-image {
   width: 100%;
   height: auto;
-  min-width: 500px;
+  max-width: 600px;
+  min-width: 550px
 }
 
-.buisness-content{
+.buisness-content {
   flex: 1 1 auto;
   display: flex;
   flex-direction: row;
-  margin: 10%;
-  align-items: center;
-}
-
-.buisness-text{
-  font-size: 20px;
-  align-items: center;
+  margin: 5%;
   justify-content: center;
+  align-items: center;
 }
 
-.buisness-text, h1{
-  font-size: 40px;
-  font-weight: normal;
+.buisness-text {
+  font-size: 20px;
+  max-width: 600px;
 }
 
-.buisness-text, h2{
+.buisness-text-HWDI {
+  font-size: 20px;
+  max-width: 1200px;
+}
+
+.divider-red {
+  background-color: red;
+  min-height: 5px;
+  max-width: 75px;
+}
+
+.divider-white {
+  background-color: white;
+  min-height: 5px;
+  max-width: 75px;
+}
+
+.ambition-section {
+  background-color: red;
+  color: white;
+  flex: 1 1 auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.ambition-large {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.ambition-text {
+  font-size: 32px;
   font-weight: normal;
-  font-size: 24px;
+  max-width: 550px;
+}
+
+
+@media all and (max-width:1000px) {
+  .buisness-content {
+    flex-direction: column;
+  }
+
+  .ambition-section{
+    flex-direction: column;
+  }
+
+  .ambition-large{
+    margin-top: 10%;
+    margin-bottom: 20px;
+  }
+
 }
