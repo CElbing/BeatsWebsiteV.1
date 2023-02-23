@@ -25,13 +25,11 @@ header {
 }
 
 h1 {
-  font-size: 40px;
   font-weight: normal;
 }
 
 h2 {
   font-weight: normal;
-  font-size: 24px;
 }
 
 .headline-text {
@@ -63,9 +61,13 @@ h2 {
   max-width: 600px;
 }
 
-.buisness-text-HWDI {
-  font-size: 20px;
-  max-width: 1200px;
+.buisness-text-hwdi {
+  font-size: 15px;
+  max-width: 1000px;
+}
+
+.buisness-text-hwdi h1{
+  font-size: 40px;
 }
 
 .divider-red {
@@ -109,6 +111,26 @@ h2 {
   max-width: 550px;
 }
 
+.hwdi-list {
+  flex: 0 1 auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+  gap: 40px;
+}
+
+.hwdi-list h1{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hwdi-list h2{
+  font-size: 18px;
+  max-width: 300px;
+}
 
 @media all and (max-width:1000px) {
   .buisness-content {
@@ -122,6 +144,21 @@ h2 {
   .ambition-large{
     margin-top: 10%;
     margin-bottom: 20px;
+  }
+
+  .hwdi-list
+  {
+    flex-direction: column;
+  }
+
+  .hwdi-list h1{
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .hwdi-list h2{
+    font-size: 22px;
+    max-width: 350px;
   }
 
 }
